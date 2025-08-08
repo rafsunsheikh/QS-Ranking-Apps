@@ -58,8 +58,8 @@ st.set_page_config(layout="wide")
 
 def academic_reputation_section():
   global aca_rep_score
-  aca_rep_score_previous = 36
-  aca_rep_score = st.slider("Academic Reputation Score", 0.0, 100.0, 36)
+  aca_rep_score_previous = 36.0
+  aca_rep_score = st.slider("Academic Reputation Score", 0.0, 100.0, 36.0)
   if aca_rep_score != aca_rep_score_previous:
     international_reputation_weight = 0.85
     domestic_reputation_weight = 0.15
