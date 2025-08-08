@@ -5,13 +5,13 @@ import numpy as np
 url = "https://raw.githubusercontent.com/rafsunsheikh/qs_ranking/main/2026_QS_World_University_Rankings.csv"
 qs_dataset = pd.read_csv(url)
 
-df = qs_dataset[["2026 QS World University Rankings", "Unnamed: 31"]]
+df = qs_dataset[["2026 QS World University Rankings", "Unnamed: 28"]]
 
 new_df = df.iloc[3:].copy()
 new_df.reset_index(drop=True, inplace=True)
 
 new_df["2026 QS World University Rankings"] = pd.to_numeric(new_df["2026 QS World University Rankings"], errors='coerce', downcast='float')
-new_df["Unnamed: 31"] = pd.to_numeric(new_df["Unnamed: 31"], errors='coerce', downcast='float')
+new_df["Unnamed: 28"] = pd.to_numeric(new_df["Unnamed: 28"], errors='coerce', downcast='float')
 new_df = new_df.dropna()
 new_df.isna().sum()
 
