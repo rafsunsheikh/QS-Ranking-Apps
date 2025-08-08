@@ -65,9 +65,9 @@ def academic_reputation_section():
     domestic_reputation_weight = 0.15
     international_reputation_score = aca_rep_score * international_reputation_weight
     domestic_reputation_score = aca_rep_score * domestic_reputation_weight
-    st.write(f"You have to get {international_reputation_score:.2f}% surveying academician to select this institution internationally within top 30 International university.")
-    st.divider()
-    st.write(f"You have to get {domestic_reputation_score:.2f}% surveying academician to select this institution domestically within top 10 Domestic University.")
+    # st.write(f"You have to get {international_reputation_score:.2f}% surveying academician to select this institution internationally within top 30 International university.")
+    # st.divider()
+    # st.write(f"You have to get {domestic_reputation_score:.2f}% surveying academician to select this institution domestically within top 10 Domestic University.")
     aca_rep_score_previous = aca_rep_score
     st.divider()
     st.subheader("How to Achieve?")
