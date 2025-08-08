@@ -58,8 +58,8 @@ st.set_page_config(layout="wide")
 
 def academic_reputation_section():
   global aca_rep_score
-  aca_rep_score_previous = 29.3
-  aca_rep_score = st.slider("Academic Reputation Score", 0.0, 100.0, 29.3)
+  aca_rep_score_previous = 36
+  aca_rep_score = st.slider("Academic Reputation Score", 0.0, 100.0, 36)
   if aca_rep_score != aca_rep_score_previous:
     international_reputation_weight = 0.85
     domestic_reputation_weight = 0.15
@@ -83,8 +83,8 @@ def academic_reputation_section():
 
 def employer_reputation_section():
   global emp_rep_score
-  emp_rep_score_previous = 26.9
-  emp_rep_score = st.slider("Employer Reputation Score", 0.0, 100.0, 26.9)
+  emp_rep_score_previous = 30.5
+  emp_rep_score = st.slider("Employer Reputation Score", 0.0, 100.0, 30.5)
   if emp_rep_score != emp_rep_score_previous:
     international_emp_reputation_weight = 0.5
     domestic_emp_reputation_weight = 0.5
@@ -108,8 +108,8 @@ def employer_reputation_section():
 
 def faculty_student_ratio_section():
   global fac_stu_ratio_score
-  fac_stu_ratio_score_previous = 36.5
-  fac_stu_ratio_score = st.slider("Faculty Student Ratio Score", 0.0, 100.0, 36.5)
+  fac_stu_ratio_score_previous = 29.7
+  fac_stu_ratio_score = st.slider("Faculty Student Ratio Score", 0.0, 100.0, 29.7)
   if fac_stu_ratio_score != fac_stu_ratio_score_previous:
     estimated_fac_stu_ratio = (107.5-fac_stu_ratio_score)/2.5
     st.write(f"To get the score of {fac_stu_ratio_score}, the institution should have Faculty-Student Ratio of 1:{estimated_fac_stu_ratio:.2f}.")
@@ -125,7 +125,7 @@ def faculty_student_ratio_section():
 
 def citation_per_faculty_section():
   global cit_per_fac_score
-  cit_per_fac_score = st.slider("Citation Per Faculty Score", 0.0, 100.0, 91.4)
+  cit_per_fac_score = st.slider("Citation Per Faculty Score", 0.0, 100.0, 95.2)
 
 
 
@@ -147,8 +147,8 @@ def international_faculty_ratio_section():
 
 def international_student_ratio_section():
   global int_stu_ratio_score
-  int_stu_ratio_score_previous = 17.3
-  int_stu_ratio_score = st.slider("International Student Ratio Score", 0.0, 100.0, 17.3)
+  int_stu_ratio_score_previous = 36.2
+  int_stu_ratio_score = st.slider("International Student Ratio Score", 0.0, 100.0, 36.2)
   if int_stu_ratio_score != int_stu_ratio_score_previous:
     estimated_int_stu_ratio = (138.0251 - int_stu_ratio_score)/16.43
     st.write(f"To get the score of {int_stu_ratio_score}, the institution should have international Student Ratio of 1:{estimated_int_stu_ratio:.2f}.")
@@ -164,15 +164,15 @@ def international_student_ratio_section():
 
 def international_research_network_section():
   global int_res_net_score
-  int_res_net_score = st.slider("International Research Network Score", 0.0, 100.0, 49.2)
+  int_res_net_score = st.slider("International Research Network Score", 0.0, 100.0, 81.8)
 
 def employment_outcome_section():
   global emp_outcome_score
-  emp_outcome_score = st.slider("Employment Outcome Score", 0.0, 100.0, 19.27)
+  emp_outcome_score = st.slider("Employment Outcome Score", 0.0, 100.0, 20.8)
 
 def sustainability_section():
   global sustainability_score
-  sustainability_score = st.slider("Sustainablity Score", 0.0, 100.0, 93.2)
+  sustainability_score = st.slider("Sustainablity Score", 0.0, 100.0, 84.8)
 
 
 
