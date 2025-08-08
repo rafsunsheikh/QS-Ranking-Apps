@@ -90,9 +90,9 @@ def employer_reputation_section():
     domestic_emp_reputation_weight = 0.5
     international_emp_reputation_score = emp_rep_score * international_emp_reputation_weight
     domestic_emp_reputation_score = emp_rep_score * domestic_emp_reputation_weight
-    st.write(f"You have to get {international_emp_reputation_score:.2f}% surveying employer to select this institution internationally within top 30 best International university for producing relevant graduates.")
-    st.divider()
-    st.write(f"You have to get {domestic_emp_reputation_score:.2f}% surveying employer to select this institution internationally within top 10 best Domestic university for producing relevant graduates.")
+    # st.write(f"You have to get {international_emp_reputation_score:.2f}% surveying employer to select this institution internationally within top 30 best International university for producing relevant graduates.")
+    # st.divider()
+    # st.write(f"You have to get {domestic_emp_reputation_score:.2f}% surveying employer to select this institution internationally within top 10 best Domestic university for producing relevant graduates.")
     emp_rep_score_previous = emp_rep_score
     st.divider()
     st.subheader("How to Achieve?")
