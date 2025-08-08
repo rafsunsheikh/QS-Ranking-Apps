@@ -147,8 +147,8 @@ def international_faculty_ratio_section():
 
 def international_student_ratio_section():
   global int_stu_ratio_score
-  int_stu_ratio_score_previous = 34.37
-  int_stu_ratio_score = st.slider("International Student Ratio Score", 0.0, 100.0, 34.37)
+  int_stu_ratio_score_previous = 34.83
+  int_stu_ratio_score = st.slider("International Student Ratio Score", 0.0, 100.0, 34.83)
   if int_stu_ratio_score != int_stu_ratio_score_previous:
     estimated_int_stu_ratio = (138.0251 - int_stu_ratio_score)/16.43
     st.write(f"To get the score of {int_stu_ratio_score}, the institution should have international Student Ratio of 1:{estimated_int_stu_ratio:.2f}.")
