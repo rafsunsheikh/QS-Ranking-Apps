@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-url = "https://raw.githubusercontent.com/rafsunsheikh/qs_ranking/refs/heads/main/2026_QS_World_University_Rankings.csv"
+url = "https://raw.githubusercontent.com/rafsunsheikh/qs_ranking/main/2026_QS_World_University_Rankings.csv"
 qs_dataset = pd.read_csv(url)
 
 df = qs_dataset[["2026 QS World University Rankings", "Unnamed: 31"]]
